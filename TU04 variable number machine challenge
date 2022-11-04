@@ -1,0 +1,24 @@
+JungkookBorn = 1997
+TaylorSwiftBorn = 1989
+JustinBorn = 1994
+JiminBorn = 1995
+DrakeBorn = 1986
+MyAge = int(input('When were you born?'))
+AgeDifference = MyAge - JungkookBorn
+AgeDif = MyAge - TaylorSwiftBorn
+AgeDif2 = MyAge - JustinBorn
+AgeDif3 = MyAge - JiminBorn
+AgeDif4 = MyAge - DrakeBorn
+celebs = ['1.jungkook', '2.taylor', '3.justin bieber','4. jimin','5. drake']
+print(celebs)
+MyChoice = int(input('Choose your celebrity for comparison by typing in the respective number: '))
+if MyChoice == 1:
+ print("Jungkook is",AgeDifference,"years older than you")
+elif MyChoice == 2:
+ print("Taylor is", AgeDif,"years older than you")
+elif MyChoice == 3:
+ print("Justin is", AgeDif2,"years older than you")
+elif MyChoice == 4:
+ print("Jimin is", AgeDif3,"years older than you")
+else:
+ print("Drake is", AgeDif4,"years older than you")
