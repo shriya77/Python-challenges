@@ -1,0 +1,8 @@
+time = 00 
+print("WELCOME to the 12 hour to 24 hour time coverter!")
+yourTime = int(input("What is the time you want to covert (only type in a number): "))
+zone = int(input("is it am or pm? type 1 for am and 2 for pm: "))
+if zone == 2:
+ print("Your time is", yourTime + 12, "o'Clock in the evening O_O", "go to bed!")
+else:
+ print("Your 24 hour time is:", yourTime, "o'Clock, rise and shine!")
