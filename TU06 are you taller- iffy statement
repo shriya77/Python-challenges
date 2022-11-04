@@ -1,0 +1,8 @@
+MyHeight = 162
+AreYouTaller = int(input("What's your height in cm: "))
+if AreYouTaller > MyHeight:
+    print("You're taller than me :|")
+elif AreYouTaller == MyHeight:
+   print("You're my height!!!")
+else:
+    print("You're shorter than me :D")
