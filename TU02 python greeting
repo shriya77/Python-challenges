@@ -1,0 +1,2 @@
+MyName = 'shriya'
+print('Whats up', MyName,'!')
