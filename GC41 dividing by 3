@@ -1,0 +1,8 @@
+print("Its time to find out if your number is divisible by 3")
+number = int(input("Enter your number: "))
+quotient = int(number/3)
+remainder = number - (quotient*3)
+if remainder == 0: 
+ print("Your number is divisible by 3")
+else:
+ print("Unfortunately it isnt divisible!")
