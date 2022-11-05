@@ -1,0 +1,8 @@
+number = 0 
+print("What is 5 divided by 2 as a decimal?")
+number = int(input("enter the answer: "))
+while number != 2.5:
+    print("Please try again")
+    number = float(input("enter the right answer: "))
+if number == 2.5:
+    print("Good job you got it!")
