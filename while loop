@@ -1,0 +1,7 @@
+subject = "Computer Science"
+answer = str(input("enter a subject: "))
+while answer != subject:
+    print("Please enter another subject")
+    answer = str(input("enter a subject: "))
+if answer == subject:
+    print("You have good taste :D")
