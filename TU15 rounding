@@ -1,0 +1,6 @@
+x=3.33333333
+print(x)
+x=round(x,1)
+print(x)
+x=3.33333333
+print(x)
