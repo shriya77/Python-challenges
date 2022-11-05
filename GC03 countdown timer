@@ -3,7 +3,7 @@ def countdown(t):
     while t > 0:  
       mins = t // 60
       secs = t % 60
-      timer = '{:02d}'.format(secs)
+      timer = '{:2d}'.format(secs)
       print(timer) 
       time.sleep(1)
       t -= 1
