@@ -1,0 +1,35 @@
+#importing modules required
+import time
+import datetime
+
+#validating data entered
+invalid = True
+if(invalid):
+   print("Set time till alarm in format >>> number of hours:minutes (Eg. 06:30)")
+   userInput = input(">> ")
+alarmTime = [int(n) for n in userInput.split(":")]
+if alarmTime[0] >= 24 or alarmTime[0] < 0:
+  invalid = True
+elif alarmTime[1] >= 60 or alarmTime[1] < 0:
+  invalid = True
+else:
+  invalid = False
+  
+#setting the alarm
+seconds_hms = [3600, 60, 1]
+alarmSecs = sum([a*b for a,b in zip(seconds_hms[:len(alarmTime)], alarmTime)])
+now = datetime.datetime.now()
+currentTime = sum([a*b for a,b in zip(seconds_hms, [now.hour, now.minute, now.second])])
+secsUntilAlarm = alarmSecs - currentTime
+if secsUntilAlarm < 0:
+    secsUntilAlarm += 86400 
+print("Your alarm has been set")
+print("Your spaceship will be charged at %s" % datetime.timedelta(seconds=secsUntilAlarm))
+
+#alarm ringing
+time.sleep(secsUntilAlarm)
+print("Your spaceship is now charged :D")
+for i in range(0, secsUntilAlarm):
+    time.sleep(1)
+    secondsUntilAlarm -= 1
+    print(datetime.timedelta(seconds=secsUntilAlarm))
