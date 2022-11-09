@@ -1,0 +1,49 @@
+scoreTeam1tries = 0
+scoreTeam1conversion = 0 
+scoreTeam1penalty = 0
+scoreTeam2tries = 0
+scoreTeam2conversion = 0
+scoreTeam2penalty = 0
+penalty = 1
+tryscore = 1
+conversion = 1
+
+print("To EXIT from the scorer at any time, type the word 'exit' in     any of the prompts")
+goalType = input("Type A for point from try, B from point from penalty kick and C for conversion: ")
+team = int(input("Type 1 for Team Australia and 2 for Team Wales: "))
+
+keep_going = True
+while keep_going:
+    if goalType == "exit":
+     if team == "exit":
+        keep_going = False
+
+if goalType == "A":
+ if team == 1:
+  print("the current scores are", "Australia:", (scoreTeam1tries + tryscore), "tries", " and", "Wales:", scoreTeam2tries, "tries")
+
+if goalType == "B":
+ if team == 1:
+   print("the current scores are", "Australia:", scoreTeam1tries, "tries", scoreTeam1penalty + penalty, " and", "Wales:", scoreTeam2tries, "tries", scoreTeam2penalty)
+
+if goalType == "C":
+ if team == 1:
+   print("the current scores are", "Australia:", scoreTeam1tries, "tries", scoreTeam1penalty, scoreTeam1conversion + conversion, " and", "Wales:", scoreTeam2tries, "tries", scoreTeam2penalty, scoreTeam2conversion)
+
+if goalType == "A":
+ if team == 2:
+  print("the current scores are", "Australia:", scoreTeam1tries, "tries", " and", "Wales:", scoreTeam2tries + tryscore, "tries")
+
+if goalType == "B":
+ if team == 2:
+   print("the current scores are", "Australia:", scoreTeam1tries, "tries", scoreTeam1penalty, " and", "Wales:", scoreTeam2tries, "tries", scoreTeam2penalty + penalty)
+
+if goalType == "C":
+ if team == 2:
+   print("the current scores are", "Australia:", scoreTeam1tries, "tries", scoreTeam1penalty, scoreTeam1conversion, " and", "Wales:", scoreTeam2tries, "tries", scoreTeam2penalty, scoreTeam2conversion + conversion)
+
+if goalType == "exit":
+ print("GAME OVER!")
+
+if team == "exit":
+ print("GAME OVER!")
