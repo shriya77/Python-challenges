@@ -9,10 +9,9 @@ tryscore = 1
 conversion = 1
 
 keep_going = True
-while keep_going:
- goalType = input("Type A for point from try, B from point from penalty kick and C for conversion: ")
+if keep_going:
+ print("To EXIT from the scorer at any time, type the word 'exit' in     the goal type prompt")
 
-print("To EXIT from the scorer at any time, type the word 'exit' in     the goal type prompt")
 goalType = input("Type A for point from try, B from point from penalty kick and C for conversion: ")
 team = int(input("Type 1 for Team Australia and 2 for Team Wales: "))
 
@@ -42,7 +41,3 @@ if goalType == "C":
 
 if goalType == "exit":
         keep_going = False
-
-if goalType == "exit":
- print("GAME OVER!")
-
