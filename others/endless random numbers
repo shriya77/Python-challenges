@@ -1,0 +1,11 @@
+import random
+
+userinput = input("Shall we begin? (type y/n): ")
+if userinput == "y":
+ keep_going = 'true'
+
+while userinput == "y":
+ mynumber = random.uniform(0.1,9.9)
+ print(mynumber)
+ mynumber2 = random.randint(0,100)
+ print(mynumber2)
