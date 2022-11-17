@@ -1,0 +1,12 @@
+import random
+
+Choose_Name = ["James","John","Mark","Rick"]
+
+chosen = random.choice(Choose_Name)
+
+question = "Do you want to remove", chosen, "from the list? y/n: "
+
+choice = input(question)
+if choice == "y":
+  Choose_Name.remove(chosen)
+print(Choose_Name)
