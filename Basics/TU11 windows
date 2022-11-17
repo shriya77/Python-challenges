@@ -1,0 +1,21 @@
+import tkinter
+import random
+window = tkinter.Tk()
+
+Names = ["Dhivyesh","Bob","Jack","King Charles","Aeron","Kyle"]
+
+def Name():
+     MyRandom = random.randint(0,5)
+     
+     name.configure(text="Name: " + str(Names[MyRandom]))
+
+MyTitle = tkinter.Label(window, text="Random Name Picker",font="Arial 16 bold")
+MyTitle.pack()
+
+MyButton = tkinter.Button(window, text="GENERATE", command=Name)
+MyButton.pack()
+
+name = tkinter.Label(window, font="Arial 13 bold")
+name.pack()
+
+window.mainloop()
