@@ -1,0 +1,9 @@
+charas=[]
+name = input("Please enter your character name, if you would like to view list enter view: ")
+
+while name != "view":
+ name = input("Please enter your character name, if you would like to   view your list enter view: ")
+ charas.append(name)
+
+if name == "view":
+ print(charas)
