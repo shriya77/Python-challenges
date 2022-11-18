@@ -1,0 +1,33 @@
+#Exercise 1
+mymoney=129
+print(f"RM{mymoney}")
+
+#Exercise 1 part 2
+numcol1 = [1,1003442,5.32222342]
+numcol2 = [5.62233,7.364363,9.32747474342]
+numcol3 = [9.2634526,7.866832817,10.781237892798]
+
+print("\nLeft Justify")
+for i in range(3):
+    print(f"{numcol1[i]:<15} {numcol2[i]:<15} {numcol3[i]:<15}")
+
+print("\nRight justify with fixed decimal points")
+for i in range(3):
+    print(f"{numcol1[i]:>15.2f} {numcol2[i]:>15.2f} {numcol3[i]:>15.2f}")
+# Note the order here. >15 and then .2f which is 2 decimal places
+
+print("\nCentred with fixed decimal points")
+for i in range(3):
+    print(f"{numcol1[i]:^15.2f} {numcol2[i]:^15.2f} {numcol3[i]:^15.2f}")
+
+#Exercise 2
+num = ["first number",1,2,3]
+num2 = ["second number",6,7,8]
+num3 = ["sum",7,9,11]
+
+for i in range(4):
+    print(f"{num[i]:<15} {num2[i]:<15} {num3[i]:<15}")
+
+#Exercise 3
+number = int(input("please enter the number you would like to change to binary form: "))
+print(f"binary form: {number:b}")
