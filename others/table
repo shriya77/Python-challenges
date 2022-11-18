@@ -1,0 +1,11 @@
+d = {1: ["Python", 33, '1st'],
+2: ["Java", 23, '5th'],
+3: ["Ruby", 17, '2nd'],
+4: ["Javascript", 10, '3rd'],
+5: ["C++", 9, '4th'],
+6: ["C", 8, '6th']
+}
+print ("{:<8} {:<15} {:<10} {:<10}".format('Pos','Lang','% used','Personal_fav'))
+for k, v in d.items():
+    lang, perc, personal_fav = v
+    print ("{:<8} {:<15} {:<10} {:<10}".format(k, lang, perc, personal_fav))
