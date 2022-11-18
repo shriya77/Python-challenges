@@ -1,0 +1,18 @@
+#Exercise 1
+#MyString = "abcdef"
+#print(MyString)
+#print(MyString[0:3]) #prints first three
+#print(MyString[3::]) #prints everything after c
+#print(MyString[0:6:2]) #prints every alternate character
+#print(MyString[-1:-7:-1]) #prints everything backwards
+#print(MyString[0:-2]) #prints everything except the last 2
+
+#Exercise 2
+
+MyString = "shriya loves chicken"
+print(MyString)
+print(MyString[0:4]) 
+print(MyString[11::]) 
+print(MyString[0:18:2]) 
+print(MyString[-1:-19:-1]) 
+print(MyString[0:-2]) 
