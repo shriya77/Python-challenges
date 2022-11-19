@@ -1,0 +1,15 @@
+userinput = input("Please enter a number with 5 digit with the last digit being a check digit: ")
+n1 = int(userinput[0])
+n2 = int(userinput[1])
+n3 = int(userinput[2])
+n4 = int(userinput[3])
+m1 = (n1*5)
+m2 = (n2*4)
+m3 = (n3*3)
+m4 = (n4*2)
+addsum = (m1+m2+m3+m4)
+modulo = addsum%11
+end = 11-modulo
+lastnumber = int(userinput[4])
+if end == lastnumber:
+    print("Check digit confirmed")
