@@ -1,0 +1,15 @@
+userchoice = int(input("choose  1 to open the rudyard poem or 2 for mam poem: "))
+if userchoice == 1:
+    poem = "rudyard.txt"
+elif userchoice == 2:
+    poem = "mam.txt"
+with open(poem,"r") as whole_file:
+   for line in whole_file:
+        while True:
+            choice = input("keep reading? y/n: ")
+            if choice == "y":
+                break
+            else:
+                print("cmon, read till the end!")
+        print(line,end="")
+        
