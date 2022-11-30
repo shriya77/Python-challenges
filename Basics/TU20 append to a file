@@ -1,0 +1,10 @@
+count = 0
+with open("counter.txt", "r") as whole_file:
+  for line in whole_file:
+    print(line, end="")
+    count = count+1
+
+with open("counter.txt","a") as existing_file:
+  for i in range(count+1, count+11):
+    line_to_write = str(i)+"\n"
+    existing_file.write(line_to_write)
